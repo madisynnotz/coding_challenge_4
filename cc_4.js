@@ -27,3 +27,13 @@ while (stock > 0) {
 }
 
 console.log("Stock is now depleted.");
+
+//Task 4: Do...While Loop
+let responses = 0; // Initial response count
+
+do {
+    console.log(`Collected responses: ${responses}`);
+    responses++; // Simulate collecting a response
+} while (responses < 3);
+
+console.log("Survey complete. All responses collected.");
