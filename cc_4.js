@@ -1,5 +1,5 @@
 // Task 1: If Statements
-let purchaseAmount = 200; // Example value
+let purchaseAmount = 215; // Example value
 let discount = 0.2; // 12% discount
 
 if (purchaseAmount > 150) {
