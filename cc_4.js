@@ -7,3 +7,13 @@ if (purchaseAmount > 150) {
 }
 
 console.log(`Final amount after discount: $${purchaseAmount.toFixed(2)}`);
+
+//Task 2: For Loop
+let sales = [100, 95, 300, 250, 80]; // Example sales figures
+let totalSales = 0;
+
+for (let i = 0; i < sales.length; i++) {
+    totalSales += sales[i]; // Add each sale to totalSales
+}
+
+console.log(`Total sales: $${totalSales}`);
