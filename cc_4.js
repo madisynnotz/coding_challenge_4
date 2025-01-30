@@ -84,3 +84,11 @@ let discountPercentage = 13; // Example discount (13%)
 
 let discountedPrice = applyDiscount(price, discountPercentage);
 console.log(`The final price after a ${discountPercentage}% discount is $${discountedPrice.toFixed(2)}`);
+
+//Task 10: Arrow Functions
+const calculatePoints = purchaseAmount => Math.floor(purchaseAmount / 10);
+
+let purchaseAmount = 75; // Example purchase amount
+
+let pointsEarned = calculatePoints(purchaseAmount);
+console.log(`For a purchase of $${purchaseAmount}, you earned ${pointsEarned} loyalty points.`);
