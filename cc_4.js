@@ -1,15 +1,15 @@
 // Task 1: If Statements
-let purchaseAmount = 215; // Example value
-let discount = 0.2; // 12% discount
+let purchaseAmount = 215; // purchase amount
+let finalAmount = purchaseAmunt; //after discount
 
 if (purchaseAmount > 150) {
-    purchaseAmount -= purchaseAmount * discount; // Apply discount
+    fianlAmount -= purchaseAmount * .12; // Apply discount
 }
 
-console.log(`Final amount after discount: $${purchaseAmount.toFixed(2)}`);
+console.log(`Final amount after discount: $${finalAmount}`);
 
 //Task 2: For Loop
-let sales = [100, 95, 300, 250, 80]; // Example sales figures
+let sales = [100, 95, 300, 250, 80]; // array of sales figures
 let totalSales = 0;
 
 for (let i = 0; i < sales.length; i++) {
@@ -57,7 +57,7 @@ for (let product of products) {
 }
 
 //Task 7: forEach() Method
-let orders = [101, 102, 103]; // Example order IDs
+let orders = [101, 102, 103]; //array of order IDs
 
 orders.forEach(order => {
     console.log(`Processing order ID: ${order}`);
@@ -68,11 +68,11 @@ function calculateTax(amount, taxRate) {
     return amount * taxRate;
 }
 
-let amount = 100; // Example amount
+let amount = 1000; // Example amount
 let taxRate = 0.07; // Example tax rate (7%)
 
-let tax = calculateTax(amount, taxRate);
-console.log(`The calculated tax on $${amount} at a ${taxRate * 100}% rate is $${tax.toFixed(2)}`);
+let tax = calculateTax(1000, 0.07);
+console.log(`Tax: $${tax}`);
 
 //Task 9: Function Expressions
 const applyDiscount = function(price, discountPercentage) {
@@ -82,11 +82,13 @@ const applyDiscount = function(price, discountPercentage) {
 let price = 100; // Example price
 let discountPercentage = 13; // Example discount (13%)
 
-let discountedPrice = applyDiscount(price, discountPercentage);
-console.log(`The final price after a ${discountPercentage}% discount is $${discountedPrice.toFixed(2)}`);
+let discountedPrice = applyDiscount(100, 10);
+console.log(`The final price after a $${discountPrice}}`);
 
 //Task 10: Arrow Functions
-const calculatePoints = purchaseAmount => Math.floor(purchaseAmount / 10);
+const calculatePoints = (purchaseAmount) => {
+    return (purchaseAmount / 10);
+}
 
 let purchaseAmount = 75; // Example purchase amount
 
